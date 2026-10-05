@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: replace every [bracketed] placeholder in this file -->
+    <title>Parsley Hatulan | Performance test engineer and full-stack developer</title>
+    <meta name="description" content="Performance test engineer with 16 years of testing experience, now building and tuning full-stack web apps with PHP, Python, C#, MariaDB, Docker and Linux.">
+    <meta property="og:title" content="Parsley Hatulan | Performance test engineer and full-stack developer">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" type="text/css"  href="main.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to main content</a>
+
+<div class="shell">
+  <header class="side">
+    <div class="avatar"><img src="assets/parsing-icon.png" alt="Parse tree icon" width="96" height="96"></div>
+    <h1>Parsley</h1>
+    <p class="role">Performance test engineer and full-stack developer</p>
+    <p>Ottawa, Canada &middot; <a href="mailto:you@example.com">kprhatulan@gmail.com</a></p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#performance">Performance test case study</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#notes">Lab notes</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <ul class="links" aria-label="Profiles">
+      <li><a href="https://github.com/sleyparse">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/parsley-h-ba628628/">LinkedIn</a></li>
+      <li><a href="assets/resume.pdf">Resume (PDF)</a></li>
+    </ul>
+    <button class="theme" type="button" id="theme" aria-pressed="false">Dark mode</button>
+  </header>
+
+  <main id="content">
+    <section aria-labelledby="intro">
+      <h2 id="intro">Hello</h2>
+      <p class="lead">I have spent 16 years finding out where software slows down and why. Now I build the software too: PHP, Python and C# apps on MariaDB, packaged in Docker and run on my own Linux server.</p>
+      <p>Everything on this page runs for real. The demos are live on my server, and the code for each one is on GitHub.</p>
+    </section>
+
+    <section id="performance" aria-labelledby="perf-h">
+      <h2 id="perf-h">Performance case study</h2>
+      <figure class="chart">
+        <svg viewBox="0 0 640 230" role="img" aria-labelledby="chart-t chart-d">
+          <title id="chart-t">Response time before and after tuning</title>
+          <desc id="chart-d">Line chart. The baseline response time stays high and spiky. After the tuning change, response time drops and stays low.</desc>
+          <line class="grid-line" x1="50" y1="20" x2="620" y2="20"/>
+          <line class="grid-line" x1="50" y1="80" x2="620" y2="80"/>
+          <line class="grid-line" x1="50" y1="140" x2="620" y2="140"/>
+          <line class="grid-line" x1="50" y1="200" x2="620" y2="200"/>
+          <text class="axis" x="8" y="24">1000 ms</text>
+          <text class="axis" x="8" y="84">667 ms</text>
+          <text class="axis" x="8" y="144">333 ms</text>
+          <text class="axis" x="22" y="204">0 ms</text>
+          <line class="marker" x1="335" y1="14" x2="335" y2="200"/>
+          <text class="axis" x="343" y="30">Index added, cache on</text>
+          <polyline class="line-before" points="50,70 90,52 130,80 170,48 210,66 250,40 290,72 335,58"/>
+          <polyline class="line-after" points="335,58 370,150 410,162 450,155 490,168 530,160 575,166 620,162"/>
+          <text class="axis" x="60" y="218">Before: 50 virtual users</text>
+          <text class="axis" x="380" y="218">After: same 50 virtual users</text>
+        </svg>
+        <figcaption>Example shape only. Replace the points with your own k6 results, and link the test script in <code>/perf</code>.</figcaption>
+      </figure>
+      <ul class="stats">
+        <li><b>[900 ms to 220 ms]</b><span>p95 response time</span></li>
+        <li><b>[2% to 0%]</b><span>error rate</span></li>
+        <li><b>[50]</b><span>virtual users, same in both runs</span></li>
+      </ul>
+      <p>[Two or three sentences: what you tested, what you found, what you changed. Name the tool, the app and the fix.]</p>
+      <p><a href="#">Read the full write-up</a></p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-h">
+      <h2 id="skills-h">Skills, with proof</h2>
+      <ul class="skills" id="skill-list"></ul>
+      <noscript><p>Skills list needs JavaScript. See the project list on GitHub instead.</p></noscript>
+    </section>
+
+    <section id="projects" aria-labelledby="proj-h">
+      <h2 id="proj-h">Projects</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects by technology"></div>
+      <ul class="cards" id="cards" aria-live="polite"></ul>
+    </section>
+
+    <section id="notes" aria-labelledby="notes-h">
+      <h2 id="notes-h">Lab notes</h2>
+      <ul class="notes">
+        <li><h3><a href="#">[How I hardened a fresh Linux server]</a></h3><span class="tags">[Month Year] &middot; Linux, SSH, firewall</span></li>
+        <li><h3><a href="#">[Reading EXPLAIN output in MariaDB]</a></h3><span class="tags">[Month Year] &middot; Databases</span></li>
+        <li><h3><a href="#">[Load testing a PHP app with k6]</a></h3><span class="tags">[Month Year] &middot; Performance</span></li>
+      </ul>
+    </section>
+
+    <section id="background" aria-labelledby="bg-h">
+      <h2 id="bg-h">Background</h2>
+      <h3>Web Development and Internet Applications</h3>
+      <p>Algonquin College, graduated April 2024.</p>
+      <h3>Computer Engineering</h3>
+      <p>Graduated 2006.</p>
+      <h3>Performance testing</h3>
+      <p>16 years. [Add one line about the kinds of systems you tested.]</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <!-- TODO: create a free form at formspree.io and paste its URL into action -->
+      <form action="https://formspree.io/f/[your-form-id]" method="post">
+        <div><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div><label for="email">Your email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="msg">Message</label><textarea id="msg" name="message" required></textarea></div>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </section>
+
+    <footer>&copy; <span id="year">2026</span> Parsley Hatulan. Built by hand with HTML, CSS and JavaScript.</footer>
+  </main>
+</div>
+
+    <script src="event.js" defer></script>
+    <script src="script.js" defer ></script>
+</body>
+</html>
